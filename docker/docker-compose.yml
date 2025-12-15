@@ -18,7 +18,7 @@ version: "3"
 services:
   redis-cluster:
     image: redis
-    command: redis-cli --cluster create 172.22.225.9:6371 172.22.225.9:6372 172.22.225.9:6373 172.22.225.9:6374 172.22.225.9:6375 172.22.225.9:6376 --cluster-replicas 1  --cluster-yes
+    command: redis-cli --cluster create redis-6371:6371 redis-6372:6372 redis-6373:6373 redis-6374:6374 redis-6375:6375 redis-6376:6376 --cluster-replicas 1  --cluster-yes
     depends_on:
       - redis-6371
       - redis-6372
